@@ -18,7 +18,6 @@ let localStream;
 let remoteStream;
 let peerConnection;
 
-// connecting to google stun servers
 const servers = {
   iceServers: [
     {
@@ -28,13 +27,12 @@ const servers = {
 };
 
 let constraints = {
-  video:
-  {
-    width:{min:640, ideal:1920, max:1920},
-    height:{min:480, ideal:1080, max:1080},
+  video: {
+    width: { min: 640, ideal: 1920, max: 1920 },
+    height: { min: 480, ideal: 1080, max: 1080 },
   },
-  audio:true
-}
+  audio: true,
+};
 
 let init = async () => {
   client = await AgoraRTM.createInstance(APP_ID);
@@ -48,7 +46,6 @@ let init = async () => {
 
   client.on("MessageFromPeer", handleMessageFromPeer);
 
-  // getting permission to use camera
   localStream = await navigator.mediaDevices.getUserMedia(constraints);
   document.getElementById("user-1").srcObject = localStream;
 };
@@ -60,6 +57,7 @@ let handleUserLeft = (MemberId) => {
 
 let handleMessageFromPeer = async (message, MemberId) => {
   message = JSON.parse(message.text);
+
   if (message.type === "offer") {
     createAnswer(MemberId, message.offer);
   }
@@ -97,12 +95,10 @@ let createPeerConnection = async (MemberId) => {
     document.getElementById("user-1").srcObject = localStream;
   }
 
-  // adding tracks(audio and video) to our local server
   localStream.getTracks().forEach((track) => {
     peerConnection.addTrack(track, localStream);
   });
 
-  // listening for remote peer to add tracks(audio and video)
   peerConnection.ontrack = (event) => {
     event.streams[0].getTracks().forEach((track) => {
       remoteStream.addTrack(track);
@@ -126,7 +122,7 @@ let createPeerConnection = async (MemberId) => {
 
 let createOffer = async (MemberId) => {
   await createPeerConnection(MemberId);
-  // creating an SDP offer
+
   let offer = await peerConnection.createOffer();
   await peerConnection.setLocalDescription(offer);
 
@@ -169,11 +165,11 @@ let toggleCamera = async () => {
   if (videoTrack.enabled) {
     videoTrack.enabled = false;
     document.getElementById("camera-btn").style.backgroundColor =
-      "rgb(255,0,0)";
+      "rgb(255, 80, 80)";
   } else {
     videoTrack.enabled = true;
     document.getElementById("camera-btn").style.backgroundColor =
-      "rgb(179,102,249,.9)";
+      "rgb(179, 102, 249, .9)";
   }
 };
 
@@ -184,11 +180,12 @@ let toggleMic = async () => {
 
   if (audioTrack.enabled) {
     audioTrack.enabled = false;
-    document.getElementById("mic-btn").style.backgroundColor = "rgb(255,0,0)";
+    document.getElementById("mic-btn").style.backgroundColor =
+      "rgb(255, 80, 80)";
   } else {
     audioTrack.enabled = true;
     document.getElementById("mic-btn").style.backgroundColor =
-      "rgb(179,102,249,.9)";
+      "rgb(179, 102, 249, .9)";
   }
 };
 
