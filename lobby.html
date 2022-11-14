@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>One Friend</title>
+    <title>Lobby - One Friend</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -11,9 +11,39 @@
       media="screen"
       href="./styles/lobby.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
   </head>
   <body>
     <main id="lobby-container">
+      <div class="logo-container">
+        <img src="./images/logo.png" alt="one friend logo" class="logo" />
+      </div>
+      <div class="lobby-title">
+        <p class="title">
+          Welcome to One Friend, a video call program you can use to communicate
+          with only one friend 😁
+        </p>
+      </div>
+      <div class="read_more_btn">
+        <a href="./more.html"><input type="button" value="About" /></a>
+      </div>
       <div id="form-container">
         <div id="form__container__header">
           <p>👋 Create OR Join a Room</p>
@@ -21,7 +51,12 @@
 
         <div id="form__content__wrapper">
           <form id="join-form">
-            <input type="text" name="invite_link" required />
+            <input
+              type="text"
+              name="invite_link"
+              required
+              placeholder="Type your friends room name or make a new one"
+            />
             <input type="submit" value="Join Room" />
           </form>
         </div>
