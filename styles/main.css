@@ -29,7 +29,7 @@
    height: 170px;
    width: 300px;
    border-radius: 5px;
-   border: 2px solid purple;
+   border: 3px solid #2196f3;
    -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
    z-index: 999;
@@ -46,7 +46,7 @@
  }
 
  .control-container{
-   background-color: rgb(179,102,249, .9);
+   background-color: #2196f3;
    padding: 20px;
    border-radius: 50%;
    display: flex;
@@ -61,7 +61,7 @@
  }
 
  #leave-btn{
-   background-color: rgb(255,0,0);
+   background-color: #fff;
  }
 
  @media screen and (max-width:600px) {

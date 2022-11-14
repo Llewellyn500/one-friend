@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+    font-family: "Share Tech Mono", monospace;
+}
+
 body{
-    background-color: #1a1a1a;
+    background-color: #1b1b22;
     color: #fff;
 }
 
@@ -7,10 +13,12 @@ body{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    background-color: #262625;
+    background-color: #1b1b22;
     position: fixed;
+    border: solid 1px #2196f3;
     top: 50%;
     left: 50%;
+    box-shadow: 0 10px 20px 0 #2195f31e;
     transform: translate(-50%, -50%);
 }
 
@@ -19,10 +27,10 @@ body{
     border-radius: 10px 10px 0 0;
     padding: 30px;
     text-align: center;
-    background-color: #363739;
+    background-color: #24242e;
     margin: 0;
     font-size: 18px;
-    font-size: 300;
+    font-weight: 900;
     line-height: 0;
   }
 
@@ -36,15 +44,15 @@ input {
     width: 100%;
     margin: 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 16px 20px;
-    font-size: 15px;
-    background-color: #3f434a;
+    font-size: 16px;
+    background-color: #24242e;
     margin-top: 32px;
   }
  
  
   input[type='submit'] {
-    background-color: #845695;
+    background-color: #2196f3;
  
   }

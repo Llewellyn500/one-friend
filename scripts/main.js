@@ -169,7 +169,7 @@ let toggleCamera = async () => {
   } else {
     videoTrack.enabled = true;
     document.getElementById("camera-btn").style.backgroundColor =
-      "rgb(179, 102, 249, .9)";
+      "#2196f3";
   }
 };
 
@@ -185,7 +185,7 @@ let toggleMic = async () => {
   } else {
     audioTrack.enabled = true;
     document.getElementById("mic-btn").style.backgroundColor =
-      "rgb(179, 102, 249, .9)";
+      "#2196f3";
   }
 };
 
