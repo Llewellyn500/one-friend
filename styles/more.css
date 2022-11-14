@@ -78,3 +78,8 @@
   #socials--list a:hover {
     color: var(--mainTextColor);
   }
+  @media screen and (max-width:600px) {
+    img{
+      width: 400px;
+    }
+  }
