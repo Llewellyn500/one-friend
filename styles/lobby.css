@@ -104,6 +104,18 @@ input {
   }
 
   @media screen and (max-width:600px) {
+    #form-container{
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      background-color: #1b1b22;
+      position: fixed;
+      border: solid 1px #2196f3;
+      top: 56%;
+      left: 50%;
+      box-shadow: 0 10px 20px 0 #2195f31e;
+      transform: translate(-50%, -50%);
+  }
     .logo-container{
       width: 10%;
       max-width: 100px;
