@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1b1b22;
+    background-color: #141413;
     color: #fff;
 }
 
@@ -54,7 +54,7 @@ body{
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    background-color: #1b1b22;
+    background-color: #141413;
     position: fixed;
     border: solid 1px #2196f3;
     top: 56%;
@@ -75,7 +75,7 @@ body{
     padding: 30px;
     position: relative;
     text-align: center;
-    background-color: #24242e;
+    background-color: #1d1e20;
     margin: 0;
     font-size: 18px;
     font-weight: 900;
@@ -96,7 +96,7 @@ input {
     padding: 16px 20px;
     font-size: 17px;
     font-weight: 400;
-    background-color: #24242e;
+    background-color: #1d1e20;
     margin-top: 32px;
     cursor: pointer;
   }
@@ -115,12 +115,9 @@ input {
       width: 90%;
       max-width: 600px;
       border-radius: 10px;
-      background-color: #1b1b22;
       position: fixed;
-      border: solid 1px #2196f3;
       top: 56%;
       left: 50%;
-      box-shadow: 0 10px 20px 0 #2195f31e;
       transform: translate(-50%, -50%);
   }
     .logo-container{
@@ -135,7 +132,6 @@ input {
     .logo{
       width: 50px;
       border-radius: 10px;
-      box-shadow: 0 10px 20px 0 #2195f31e;
     }
     .lobby-title{
       width: 90%;
@@ -157,7 +153,6 @@ input {
       transform: translate(-50%, -50%);
     }
     .read_more_btn input{
-      background-color: #2196f3;
       font-size: 20px;
       font-weight: 900;
     }
@@ -168,12 +163,9 @@ input {
       width: 90%;
       max-width: 600px;
       border-radius: 10px;
-      background-color: #1b1b22;
       position: fixed;
-      border: solid 1px #2196f3;
       top: 58%;
       left: 50%;
-      box-shadow: 0 10px 20px 0 #2195f31e;
       transform: translate(-50%, -50%);
   }
   .note{
@@ -192,7 +184,6 @@ input {
     .logo{
       width: 50px;
       border-radius: 10px;
-      box-shadow: 0 10px 20px 0 #2195f31e;
     }
     .lobby-title{
       max-width: 800px;
@@ -213,7 +204,6 @@ input {
       transform: translate(-50%, -50%);
     }
     .read_more_btn input{
-      background-color: #2196f3;
       font-size: 15px;
       font-weight: 900;
     }
